@@ -41,7 +41,7 @@ def generate_response(response):
 
 
 def verify_token():
-    return requests.get("https://api.vimeo.com/oauth/verify", headers=headers)
+    return requests.get(f"{api_url}/oauth/verify", headers=headers)
 
 
 def get_browser():
